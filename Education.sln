@@ -43,6 +43,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2._AspNetCore_WebApp_Mvc_Cu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3._AspNetCore_WebApp_Mvc_Attribute", "1._AspNetCore\1.3_Routing\3._AspNetCore_WebApp_Mvc_Attribute\3._AspNetCore_WebApp_Mvc_Attribute.csproj", "{36EA3AF4-DC24-4883-A3D3-46C98A909B93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1._AspNetCore_WebApp_LayoutView_Section", "1._AspNetCore_WebApp_LayoutView_Section\1._AspNetCore_WebApp_LayoutView_Section.csproj", "{9533A032-EE8A-4A16-9E46-21CEC1817204}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{36EA3AF4-DC24-4883-A3D3-46C98A909B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36EA3AF4-DC24-4883-A3D3-46C98A909B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36EA3AF4-DC24-4883-A3D3-46C98A909B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9533A032-EE8A-4A16-9E46-21CEC1817204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9533A032-EE8A-4A16-9E46-21CEC1817204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9533A032-EE8A-4A16-9E46-21CEC1817204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9533A032-EE8A-4A16-9E46-21CEC1817204}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +133,7 @@ Global
 		{D14057D8-9C59-41B7-BAD8-11F6824A8B05} = {13E258F1-1049-47DE-8430-ADC278D1064E}
 		{0C80E3FA-E626-4486-A110-0D0209547B85} = {13E258F1-1049-47DE-8430-ADC278D1064E}
 		{36EA3AF4-DC24-4883-A3D3-46C98A909B93} = {13E258F1-1049-47DE-8430-ADC278D1064E}
+		{9533A032-EE8A-4A16-9E46-21CEC1817204} = {2E7B93A4-3E12-45D4-8B91-87E12E2727B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B29EA683-8DC4-4D3C-ABA0-E6A044ACD6C2}
