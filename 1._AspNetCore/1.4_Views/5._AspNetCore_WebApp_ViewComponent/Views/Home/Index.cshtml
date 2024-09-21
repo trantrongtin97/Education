@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h4>Using Invoking</h4>
+    @await Component.InvokeAsync("TopProduct", new { count = 3 })
+</div>
+
+<div class="text-center">
+    <h4>Using Tag Helper</h4>
+    <vc:top-product count="3"></vc:top-product>
+</div>

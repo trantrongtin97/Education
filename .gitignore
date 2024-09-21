@@ -1,0 +1,7 @@
+# Ignore bin folder
+**/obj/
+**/bin/
+
+# Ignore .vscode and .vs
+**/.vs/
+**/Notes.txt

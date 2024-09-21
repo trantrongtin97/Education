@@ -1,0 +1,24 @@
+﻿=========================================================================================================== Asp.Net Core View Component
+View Components are used to create reusable components that can encapsulate rendering logic and data fetching logic independently from views, 
+and they can be called from different places like from Controller action methods, from views, and from Razor Pages. They are similar to partial views, 
+but they can have their own logic, making them suitable for creating dynamic content that requires processing.
+
+View Components consist of two main parts: the class that handles processing and logic and the result it returns, which is typically a view (rendered HTML). 
+They are ideal for scenarios where you need to display information that requires some business logic to fetch or generate the displayed data, 
+such as dynamic navigation menus,a shopping cart, or user profile summaries.
+
+View Component bao gôm 2 file:
+	- Server-Side File (.cs file): Contains the logic to retrieve or prepare data.
+	- Client Side File (.cshtml file): Renders the output, similar to how a partial view works.
+
+Location for the files of view component
+	- Server-Side File (.cs file): Any where with any name at ROOT LEVEL of the project and pull all them in folder
+	- Client-Side File (.cshtml):
+		Location 1: Call from controler'action method
+			 /Views/{Controller Name}/Components/{View Component Name}/{View Name}
+		Location 2: Call from other cshtml file
+			/Views/Shared/Components/{View Component Name}/{View Name}
+		Location 3: Using in Razor pages
+			/Pages/Shared/Components/{View Component Name}/{View Name}
+
+Note: Recommended naming of view component is Default.cshtml

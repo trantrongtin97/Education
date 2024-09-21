@@ -1,0 +1,176 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>=======================================================================</h1>
+<h3>Code Block</h3>
+@{
+    var greeting = "Welcome to ASP.NET Core MVC!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    ViewData["Title"] = "Home Page";
+}
+@{
+    var product = new Product()
+            {
+                ProductID = 1000,
+                Name = "Laptop",
+                Description = "Its a Gaming Laptop",
+                Category = "Electronics",
+                Price = 10000
+            };
+}
+<p>See In Code</p>
+<h1>=======================================================================</h1>
+
+<h3>Implicit Razor Expressions</h3>
+
+<p>@greeting</p>
+<p>@DateTime.Now</p>
+<p>Today is : @weekDay thank you </p>
+<p>Name : @product.Name</p>
+<p>Description : @product.Description</p>
+<p>Price : @product.Price</p>
+
+<h1>=======================================================================</h1>
+
+<h3>Explicit Razor Expressions</h3>
+
+<p>@(greeting)</p>
+<p>@(DateTime.Now)</p>
+<p>Today is : @(weekDay) thank you </p>
+<p>Name : @(product.Name)</p>
+<p>Description : @(product.Description)</p>
+<p>Price : @(product.Price)</p>
+
+<h1>=======================================================================</h1>
+
+<h3>Variables </h3>
+@{
+    string message = "Welcome to ASP.NET Core MVC";
+    var helloWorld = @"Hello ""World""";
+    var Path = @"C:\Windows\";
+    var symbol = "You can print @ in html";
+    @*This is comment*@
+}
+@{
+    DateTime date = DateTime.Now;
+    int Number = 100;
+}
+<p>@message</p>
+<p> The current date is @date</p>
+<p>Numbers : @Number</p>
+<p>@helloWorld</p>
+<p>The path is: @Path</p>
+<p>The @@symbol is: @symbol</p>
+    @*This is comment*@
+
+<h1>=======================================================================</h1>
+
+<h3>HTML Elements inside the code block </h3>
+@{
+    <p>Hello from the Code block</p>
+}
+<h3>Single line text </h3>
+@{
+    @:Hello from the Code block
+}
+<h3>Multiline text</h3>
+@{
+    <text>
+        Multiline text 1
+        Multiline text 2
+        Multiline text 3
+    </text>
+}
+
+<h1>=======================================================================</h1>
+
+<h3>If and Else Conditions</h3>
+@{
+    int value = 200;
+}
+
+@if (value > 100)
+{
+    <p>Value is greater than 100</p>
+}
+else
+{
+    <p>Value is less than 100</p>
+}
+<h5>Or</h5>
+@{
+    var value2 = 300;
+    if (value2 > 300)
+    {
+        <p>The value is greater than 300</p>
+    }
+    else
+    {
+        <p>This value is less than 300</p>
+    }
+}
+
+<h3>If and Else Conditions</h3>
+@{
+    var value3 = 200;
+}
+
+@switch (value3)
+{
+    case 0:
+        @: value is Zero
+        break;
+    case 100:
+        <p>Value is 100 </p>
+        break;
+    case 200:
+        <p>Value is @value </p>
+        break;
+    case 300:
+        <text>Value is 300</text>
+        break;
+    default:
+        <p>Invalid Value </p>
+        break;
+}
+
+<h3>Loops</h3>
+<h5>For loop</h5>
+@for (int i = 0; i < 5; i++)
+{
+    <span> @i </span>
+}
+<h5>Foreach loop</h5>
+@{
+    var productList = new List<Product>()
+    {
+        new Product() { ProductID = 1001, Name = "Laptop", Price = 1000 },
+        new Product() { ProductID = 1002, Name = "Desktop", Price = 2000 },
+        new Product() { ProductID = 1002, Name = "Mobile", Price = 3000 }
+    };
+}
+
+<table>
+    <thead>
+        <tr><td>ProductID</td><td>Name</td><td>Price</td></tr>
+    </thead>
+    @foreach (Product p in productList)
+    {
+        <tr>
+            <td>@p.ProductID</td>
+            <td>@p.Name</td>
+            <td>@p.Price</td>
+        </tr>
+    }
+</table>
+<h5>While  loop</h5>
+<h5>While loop</h5>
+@{
+    var r = 0;
+    while (r < 5)
+    {
+        r += 1;
+        <span> @r</span>
+    }
+}

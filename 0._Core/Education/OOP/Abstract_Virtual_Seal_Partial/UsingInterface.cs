@@ -28,7 +28,6 @@ namespace Education.OOP.Abstract_Virtual_Seal_Partial
         }
         public void Main()
         {
-            l
             IHuman hm1 = new Human1();
             IHuman hm2 = new Human2();
             IHuman hm3 = new Human3();

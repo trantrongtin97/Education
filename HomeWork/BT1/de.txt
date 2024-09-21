@@ -1,7 +1,0 @@
-﻿Kho co : 50 hop sua, 100 cay xx, 200 qua trung cut
-nha co 3 nguoi: 2 gai, 1 trai
-cau truc object theo rule sau:
-- gai chi dc lay xx, trung cut
-- trai chi dc lay hop sua
-- cac ng trong gia dinh co the trao doi cho nhau
-- moi hang hoa co HSD, ng trong gia dinh ko dc lay do het hang
