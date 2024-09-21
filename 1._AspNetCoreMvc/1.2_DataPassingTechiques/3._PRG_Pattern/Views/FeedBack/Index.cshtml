@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+@model PRG_Pattern.Models.FeedBack
+
+<html>
+<head>
+    <title>FeedBack Index</title>
+</head>
+<body>
+    <h1>FeedBack Submited Info</h1>
+    <div>
+        Id : @Model.Id
+    </div>
+    <div>
+        Name : @Model?.Name
+    </div>
+    <div>
+        Email : @Model?.Email
+    </div>
+    <div>
+        Comment : @Model?.Comment
+    </div>
+</body>
+</html>

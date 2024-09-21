@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+@model ViewData_ViewBag_StronglyTyped.Models.Student
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <h1>@ViewBag.Header</h1>
+    <div>
+        @* StudentId : @student?.StudentId *@
+        StudentId : @Model.Id
+    </div>
+    <div>
+        Name : @Model?.Name
+    </div>
+</body>
+</html>
